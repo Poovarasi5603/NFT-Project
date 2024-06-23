@@ -53,14 +53,45 @@ pragma solidity ^0.8.20;
 import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract MyCollectible is ERC721 {
-    constructor() ERC721("MyCollectible", "MCO") {
+    constructor() ERC721("SpaceBear", "SBR") {
     }
 }
 ```
+Set the Name and Symbol as "Spacebear" and "SBR"
+Set the Base-URI as "https://ethereum-blockchain-developer.com/2022-06-nft-truffle-hardhat-foundry/nftdata/"
+Check Mintable with Auto-Increment IDs. So every time you mint a token it gets a new number.
+Enable URI Storage, so your token URIs for MetaData are not the token-ID but can be different.
 
 _If you're new to smart contract development, head to [Developing Smart Contracts](https://docs.openzeppelin.com/learn/developing-smart-contracts) to learn about creating a new project and compiling your contracts._
 
 To keep your system secure, you should **always** use the installed code as-is, and neither copy-paste it from online sources nor modify it yourself. The library is designed so that only the contracts and functions you use are deployed, so you don't need to worry about it needlessly increasing gas costs.
+
+**##JSON file**
+
+{
+    "name": "Spacebear Token 🧸",
+    "description": "Introducing the future of Cuteness. A Teddybear Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now. Also, they are coming from ethereum-blockchain-developer.com",
+    "image": "https://ethereum-blockchain-developer.com/2022-06-nft-truffle-hardhat-foundry/nftdata/spacebear_1.webp",
+    "external_url": "https://ethereum-blockchain-developer.com",
+    "attributes": [
+        {
+            "trait_type": "Artefact", 
+            "value": "Teddybear"
+        },
+        {
+            "trait_type": "Collection", 
+            "value": "Genesis"
+        }
+    ]
+}
+
+**##Deploy and See on OpenSea**
+Deploy the token using  ethereum sepolia testnet
+Then mint one token with the uri being "spacebear_1.json", so it will resolve to "https://ethereum-blockchain-developer.com/2022-06-nft-truffle-hardhat-foundry/nftdata/spacebear_1.json".
+Once the ERC721 Token is deployed,you can see that token on Opensea by giving contract address with tokenID 
+created token here is this one: 
+https://testnets.opensea.io/assets/sepolia/0x06ddea8ba04864d008be26cf7e0ddb367a554032/0
+https://testnets.opensea.io/assets/sepolia/0x06ddea8ba04864d008be26cf7e0ddb367a554032/1
 
 ## Learn More
 
