@@ -15,7 +15,7 @@ contract SpaceBear is ERC721, ERC721URIStorage, Ownable {
     {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://api.pudgypenguins.io/lil/";
+        return "https://ethereum-blockchain-developer.com/2022-06-nft-truffle-hardhat-foundry/nftdata/";
     }
 
     function safeMint(address to, string memory uri) public onlyOwner {
