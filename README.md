@@ -69,24 +69,6 @@ _If you're new to smart contract development, head to [Developing Smart Contract
 
 To keep your system secure, you should **always** use the installed code as-is, and neither copy-paste it from online sources nor modify it yourself. The library is designed so that only the contracts and functions you use are deployed, so you don't need to worry about it needlessly increasing gas costs.
 
-**JSON file**
-
-{
-    "name": "Spacebear Token 🧸",
-    "description": "Introducing the future of Cuteness. A Teddybear Token. Floating in Space. Save them by getting this NFT. Cuddle each one of them. You need them. Buy them now. Also, they are coming from ethereum-blockchain-developer.com",
-    "image": "https://ethereum-blockchain-developer.com/2022-06-nft-truffle-hardhat-foundry/nftdata/spacebear_1.webp",
-    "external_url": "https://ethereum-blockchain-developer.com",
-    "attributes": [
-        {
-            "trait_type": "Artefact", 
-            "value": "Teddybear"
-        },
-        {
-            "trait_type": "Collection", 
-            "value": "Genesis"
-        }
-    ]
-}
 
 **Deploy and See on OpenSea**
 
